@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-01-06T13:00:00+08:00</updated><entry><title>單線旋轉動畫</title><link href="./dan-xian-xuan-zhuan-dong-hua.html" rel="alternate"></link><published>2017-01-06T13:00:00+08:00</published><updated>2017-01-06T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2017-01-06:./dan-xian-xuan-zhuan-dong-hua.html</id><summary type="html">&lt;p&gt;單線旋轉動畫:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/course.atom.xml" rel="self"></link><id>./</id><updated>2017-01-06T13:00:00+08:00</updated><entry><title>單線旋轉動畫</title><link href="./dan-xian-xuan-zhuan-dong-hua.html" rel="alternate"></link><published>2017-01-06T13:00:00+08:00</published><updated>2017-01-06T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2017-01-06:./dan-xian-xuan-zhuan-dong-hua.html</id><summary type="html">&lt;p&gt;單線旋轉動畫:&lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
@@ -326,78 +326,7 @@ def autoguess(ev):
 document["but4"].bind("click", autoguess)
 &lt;/script&gt;
 &lt;button id="but4"&gt;利用程式玩猜數字&lt;/button&gt;
-&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>w15 練習</title><link href="./w15-lian-xi.html" rel="alternate"></link><published>2016-12-16T12:00:00+08:00</published><updated>2016-12-16T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-12-16:./w15-lian-xi.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;!-- ch01 基本的列印與輸入函式 --&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document
-from browser import alert
-&lt;script type="text/python3"&gt;
-from browser import document
-from browser import alert
-
-def get_input(ev):
-    the_input= input("請輸入")
-    alert("輸入為:"+str(the_input))
-
-document['ch01'].bind('click',get_input)
-&lt;/script&gt;
-
-&lt;p&gt;&lt;button id="ch01"&gt;取輸入後, 列印出來&lt;/button&gt;
-&lt;/script&gt;&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>W14 練習</title><link href="./w14-lian-xi.html" rel="alternate"></link><published>2016-12-12T14:35:00+08:00</published><updated>2016-12-12T14:35:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-12-12:./w14-lian-xi.html</id><summary type="html">&lt;p&gt;以下為第十四週開始的程式練習, 要利用 &lt;a href="http://mde.tw/2016fallcp/course/Python3Programs.txt"&gt;http://mde.tw/2016fallcp/course/Python3Programs.txt&lt;/a&gt; 中的內容, 整理 Brython 的用法.&lt;/p&gt;
-
-
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;div id="ex1"&gt;&lt;/div&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-container = doc['ex1']
-
-container &lt;= "W14 練習"
-&lt;/script&gt;
-
-&lt;div id="ex2"&gt;&lt;/div&gt;
-
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-from browser import html
-container = doc['ex2']
-mystring = input("要印出甚麼字串?")
-mynum = input("要印幾次?")
-
-for i in range(int(mynum)):
-    #container &lt;= "W14 練習-2" + html.BR()
-    container &lt;= mystring + html.BR()
-&lt;/script&gt;</summary><category term="每週練習"></category></entry><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-14:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
+&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>W10 Brython 繪圖範例</title><link href="./w10-brython-hui-tu-fan-li.html" rel="alternate"></link><published>2016-11-14T12:00:00+08:00</published><updated>2016-11-14T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-14:./w10-brython-hui-tu-fan-li.html</id><summary type="html">&lt;p&gt;Brython 繪圖&lt;/p&gt;
 
 
 &lt;p&gt;繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖&lt;/p&gt;
@@ -653,97 +582,4 @@ def animate(i):
 
 animate(0)
 '''
-&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>2016Fall CP 期中練習</title><link href="./2016fall-cp-qi-zhong-lian-xi.html" rel="alternate"></link><published>2016-11-04T12:00:00+08:00</published><updated>2016-11-04T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-11-04:./2016fall-cp-qi-zhong-lian-xi.html</id><summary type="html">&lt;p&gt;從 &lt;a href="http://www.rfc-editor.org/search/rfc_search_detail.php?page=All&amp;title=ipv6&amp;pubstatus%5B%5D=Any&amp;pub_date_type=any&amp;sortkey=Number&amp;sorting=ASC%22"&gt;IPV6 相關 RFCs 查詢&lt;/a&gt;得到的資料中, 如何在各組的網誌中整理一份能夠連結到各個未過時 (non-obsolete) 的 RFC 文件?&lt;/p&gt;
-
-
-&lt;p&gt;參考程式碼:&lt;/p&gt;
-&lt;pre class="brush: python"&gt;
-data = open("midterm_list.txt").read()
-line_list = data.splitlines()
-count = 0
-for line in line_list:
-    each_line_list = line.split("\t")
-    try:
-        if "Obsoleted" in each_line_list[5]:
-            count = count + 1
-            print(each_line_list[0])
-    except:
-        pass
-print(count)
-&lt;/pre&gt;
-
-&lt;p&gt;接下來使用 Brython 程式碼, 將程式執行結果直接顯示在網頁上.&lt;/p&gt;
-&lt;p&gt;尚未失效的 IPV6 相關 RFC 如下:&lt;/p&gt;
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;!-- 以下利用 Brython 程式執行檔案讀取與比對流程 --&gt;
-
-&lt;!-- 假如需要用圖型表示數字, 則利用 canvas 繪圖 --&gt;
-
-&lt;!-- &lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt; --&gt;
-
-&lt;div id="container"&gt;&lt;/div&gt;
-
-&lt;script type="text/python3" id="script1"&gt;
-from browser import document, html
-container = document['container']
-data = open("./../midterm_list.txt").read()
-line_list = data.splitlines()
-count = 0
-output = ""
-for line in line_list:
-    each_line_list = line.split("\t")
-    try:
-        if "Obsoleted" not in each_line_list[5]:
-            count = count + 1
-            output += html.A(each_line_list[0], href="http://www.rfc-editor.org/info/"+ each_line_list[0].lower().replace(" ", "")) + " | "
-            if count%10 == 0:
-                output += html.BR()
-    except:
-        pass
-output += html.BR() + html.BR()  + "共有 " + str(count)+ " 份文件尚未失效!"
-container &lt;= output
-&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;提供上述結果的 Brython 程式如下:
-&lt;br /&gt;&lt;/p&gt;
-&lt;pre class="brush: python"&gt;
-&lt;div id="container"&gt;&lt;/div&gt;
-
-&lt;script type="text/python3" id="script1"&gt;
-from browser import document, html
-container = document['container']
-data = open("./../midterm_list.txt").read()
-line_list = data.splitlines()
-count = 0
-output = ""
-for line in line_list:
-    each_line_list = line.split("\t")
-    try:
-        if "Obsoleted" not in each_line_list[5]:
-            count = count + 1
-            output += html.A(each_line_list[0], href="http://www.rfc-editor.org/info/"+ each_line_list[0].lower().replace(" ", "")) + " | "
-            if count%10 == 0:
-                output += html.BR()
-    except:
-        pass
-output += html.BR() + html.BR()  + "共有 " + str(count)+ " 份文件尚未失效!"
-container &lt;= output
-&lt;/script&gt;</summary><category term="使用導引"></category></entry><entry><title>2016Fall 簡報與網誌系統</title><link href="./2016fall-jian-bao-yu-wang-zhi-xi-tong.html" rel="alternate"></link><published>2016-09-02T12:00:00+08:00</published><updated>2016-09-02T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-09-02:./2016fall-jian-bao-yu-wang-zhi-xi-tong.html</id><summary type="html">&lt;p&gt;這個系統共集結了 reveal.js 網際簡報與 pelican 靜態網誌系統.&lt;/p&gt;
-
-
-&lt;p&gt;網誌 Category&lt;/p&gt;
-&lt;p&gt;網誌 Tags&lt;/p&gt;
-&lt;p&gt;reveal.js 使用導引&lt;/p&gt;</summary><category term="使用導引"></category></entry></feed>
+&lt;/script&gt;</summary><category term="Brython"></category></entry></feed>
